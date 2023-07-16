@@ -1,0 +1,5 @@
+steps:
+  #Execute SonarCloud Scan
+  - name: maven:3-jdk-11
+    entrypoint: mvn
+    args: ['verify', 'sonar:sonar','-Dsonar.host.url=https://sonarcloud.io','-Dsonar.organization=akshata-ohol-organization','-Dsonar.projectKey=akshata-ohol-project-gcp','-Dsonar.login=f5f9510ba7be8d3b9a4f2a5a67d5eebc79008e63']
