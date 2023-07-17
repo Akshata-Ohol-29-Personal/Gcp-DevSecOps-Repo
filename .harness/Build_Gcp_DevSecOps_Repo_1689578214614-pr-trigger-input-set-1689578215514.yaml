@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Gcp_DevSecOps_Repo_1689578214614-pr-trigger-input-set
+  identifier: Build_Gcp_DevSecOps_Repo_1689578214614prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: AkshataOholPersonal
+  pipeline:
+    identifier: Build_Gcp_DevSecOps_Repo_1689578214614
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
